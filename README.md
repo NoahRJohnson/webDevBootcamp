@@ -5,7 +5,9 @@ Fork this repository so you can push the answers to the exercises. You will be t
 
 ## To serve the pages
 
-```python -m SimpleHTTPServer 8081``` in the root directory of your forked github repo. 
+For Python 2: ```python -m SimpleHTTPServer 8081``` in the root directory of your forked github repo. 
+
+For Python 3: ```python -m http.server 8081``` in the root directory of your forked github repo. 
 
 If you point your browser directly to http://localhost:8081, it you will see all the different directories listed. 
 
