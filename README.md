@@ -23,7 +23,7 @@ Normal Exercises:
 
 Advanced Exercises:
 
-1. We've introduced quite a few different tags in the presentation. Try adding <li> elements in order to add more content to the fixed HTML. 
+1. We've introduced quite a few different tags in the presentation. Try adding <li> elements in order to add more content to the fixed HTML. </li>
 
 ## Section2_CSS
 
