@@ -1,0 +1,17 @@
+body {
+	background-color: pink;
+}
+
+#graph-display {
+	background-color: #f5f5f5;
+        border-radius: 25px;
+	padding: 1.5%;
+}
+
+.control-label {
+font-family: "Georgia", serif;
+}
+
+.checkbox {
+display: none
+}
