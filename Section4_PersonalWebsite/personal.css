@@ -1,18 +1,6 @@
 
 body {
-text-align: center; 
-background-color: bisque; 
+background-image: url("soyboy.jpg");
+background-size: 100%;
 }
 
-.wavy_text {
-	width: 100px;
-	height: 100px;
-	background: red;
-	position: relative;
-        animation: moveit 5s infinite;	
-}
-
-@keyframes moveit {
-	from {top: 0px;}
-	to {top: 200px;}
-}
