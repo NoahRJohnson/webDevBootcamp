@@ -1,6 +1,59 @@
-
 body {
+position: relative;
+padding-top: 31.875%;
+height: 0;
 background-image: url("soyboy.jpg");
-background-size: 100%;
+background-size: cover; !1024px 768px;
+background-repeat: no-repeat;
 }
 
+#fannyButton i { visibility: hidden; }
+#michaelButton i { visibility: hidden; }
+#noahButton i { visibility: hidden; }
+#rogerButton i { visibility: hidden; }
+#stephanieButton i { visibility: hidden; }
+
+#fannyButton {
+!border: 1px dashed blue;
+position: absolute;
+top: 112%;
+left: 65%;
+height: 35%;
+width: 25%;
+}
+
+#michaelButton {
+!border: 1px solid blue;
+position: absolute;
+top: 153%;
+left: 50%;
+height: 22%;
+width: 33%;
+}
+
+#noahButton {
+!border: 1px solid blue;
+position: absolute;
+top: 116%;
+left: 45%;
+height: 35%;
+width: 19.5%;
+}
+
+#rogerButton {
+!border: 1px solid blue;
+position: absolute;
+top: 73%;
+left: 63.5%;
+height: 37%;
+width: 21%;
+}
+
+#stephanieButton {
+!border: 1px solid blue;
+position: absolute;
+top: 73%;
+left: 42%;
+height: 37%; 
+width: 20.5%;
+}

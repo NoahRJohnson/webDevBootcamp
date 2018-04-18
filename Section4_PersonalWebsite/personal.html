@@ -2,16 +2,57 @@
     <html>
         <head>
             <title>Noah's Personal 90's Website</title>
+
+            <!-- Load javascript -->
             <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.js"></script>
+            
+            <!-- Load css styling -->
             <link rel="stylesheet" type="text/css" href="personal.css">
         </head>
+
         <body>
-            <p>D3 Has been loaded into this page from a CDN.</p>
+
+            <!-- Define the audio players for the different songs -->
+            <audio id="fannySound" src="blow a bag.mp3" preload="auto"></audio>
+            <audio id="michaelSound" src="lump sum.mp3" preload="auto"></audio>
+            <audio id="noahSound" src="junky.mp3" preload="auto"></audio>
+            <audio id="rogerSound" src="thinkin bout you.mp3" preload="auto"></audio>
+            <audio id="stephanieSound" src="blow a bag.mp3" preload="auto"></audio>
+
+            <!-- Create invisible clickable areas, to be placed over names -->
+            <div id="fannyButton" onclick="togglePlay(document.getElementById('fannySound'))"><i>fanny!</i></div>
+            <div id="michaelButton" onclick="togglePlay(document.getElementById('michaelSound'))"><i>michael!</i></div>
+            <div id="noahButton" onclick="togglePlay(document.getElementById('noahSound'))"><i>noah!</i></div>
+            <div id="rogerButton" onclick="togglePlay(document.getElementById('rogerSound'))"><i>roger!</i></div>
+            <div id="stephanieButton" type="button" onclick="togglePlay(document.getElementById('stephanieSound'))"><i>stephanie!</i></div>
+
 	    <script type="text/javascript">
-            d3.select("body")
-            .append("p")
-            .text("New Paragraph")
+
+            var fannyAudio = document.getElementById("fannyAudio");
+            var michaelAudio = document.getElementById("michaelAudio");
+            var noahAudio = document.getElementById("noahAudio");
+            var rogerAudio = document.getElementById("rogerAudio");
+            var stephanieAudio = document.getElementById("stephanieAudio");
+
+            // If a name is clicked, play their song. If it's already
+            // playing, pause it.
+            function togglePlay(memberAudio) {
+
+                return memberAudio.paused ? memberAudio.play() : memberAudio.pause();
+            };
+
+            // Add a listener to the play() function, so that we
+            // pause all other songs before playing this one.
+            document.addEventListener('play', function(e) {
+
+                var audios = document.getElementsByTagName('audio');
+
+                for(var i = 0; i < audios.length; i++) {
+                    if(audios[i] != e.target) {
+                        audios[i].pause();
+                    }
+                }
+            }, true);
             </script>
-	    <a href="http://www.zombo.com/">some link</a>
         </body>
     </html>
